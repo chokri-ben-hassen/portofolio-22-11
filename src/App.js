@@ -3,8 +3,9 @@
 
 function App() {
   return (
-   <div>
+   <div className="container">
     <h1> React App</h1>
+    <button class="btn btn-danger">ok</button>
    </div>
   );
 }
