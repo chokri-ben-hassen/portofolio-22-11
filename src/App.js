@@ -8,15 +8,16 @@ import Skills from './pages/skills';
 function App() {
   return (
    <div>
-   <Navbar />
+    <BrowserRouter>
+    <Navbar />
     <div className="container">
-      <BrowserRouter>
+      
         <Route path='/' component={Home} exact />
         <Route path='/Skills' component={Skills}/>
         <Route path='/Projects' component={Projects}/>
         <Route path='/Contact' component={Contact}/>
-      </BrowserRouter>
     </div>
+    </BrowserRouter>
     
    </div>
   );
